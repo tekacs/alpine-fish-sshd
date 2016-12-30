@@ -9,5 +9,3 @@ RUN apk update && \
 RUN sed -i -e "s/bin\/ash/usr\/bin\/fish/" /etc/passwd
 
 ENV SHELL /usr/bin/fish
-
-CMD ["fish", "--version"]
