@@ -1,4 +1,4 @@
-FROM polandj:alpine-ssh
+FROM polandj/alpine-ssh
 
 MAINTAINER Amar Sood (@tekacs)
 
