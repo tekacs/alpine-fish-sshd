@@ -1,4 +1,4 @@
-FROM polandj/alpine-ssh
+FROM sickp/alpine-sshd
 
 MAINTAINER Amar Sood (@tekacs)
 
@@ -7,5 +7,6 @@ RUN apk update && \
     rm -f /tmp/* /etc/apk/cache/*
 
 RUN sed -i -e "s/bin\/ash/usr\/bin\/fish/" /etc/passwd
+RUN passwd -d root
 
 ENV SHELL /usr/bin/fish
